@@ -93,9 +93,9 @@ while True:
             acess = True
         elif acess2 == False:
             acess = False
-    if acess == True:
-        break
-    elif acess == False:
-        lin()
+        if acess == True:
+            break
+        elif acess == False:
+            lin()
         print('Usuário ou Senha Inválidos!')
 input('Programa finalizado')
