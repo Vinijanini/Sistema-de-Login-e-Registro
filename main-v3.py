@@ -1,6 +1,5 @@
 import sqlite3
 import time
-cont2 = 0
 banco = sqlite3.connect('banco_de_dados.db')
 cursor = banco.cursor()
 
