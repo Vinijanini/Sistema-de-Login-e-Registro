@@ -10,10 +10,16 @@ if ver[0] == 0:
 usuarios = []
 usuario = {}
 acess= None
+
+
 def lin2():
     print('-' * 20)
+
+
 def lin():
     print('-=' * 10)
+
+
 def menu():
     lin()
     print('[1] Logar')
@@ -21,6 +27,8 @@ def menu():
     print('[3] Ver Cadastrados')
     print('[4] Sair')
     lin()
+
+
 def menulogado():
     lin()
     print('[1] Apagar conta')
@@ -43,7 +51,7 @@ while True:
     if esc == '2':
         lin()
         print('Registro')
-        usuario['Nome'] = str(input('Nome:'))
+        usuario['Nome'] = str(input('Nome:')).title()
         usuario['Nome']
         usuario['Idade'] = int(input('Idade:'))
         while usuario['Idade'] not in range(10, 80):
@@ -159,5 +167,5 @@ while True:
                     print(f'Idade:{c3}')
             lin()
     elif esc == '4':
-        break
-input('Programa finalizado')
+        input('Programa finalizado')
+        quit()
