@@ -57,7 +57,7 @@ while True:
     esc = str(input('>>>>>>>>>>>>>>'))
 
     ##Tratamento de erro##
-    while esc not in '12345':
+    while esc not in ('1','2','3','4','5'):
         print('Erro, Opção inválida')
         esc = str(input('>>>>>>>>>>>>>>'))
 
@@ -65,7 +65,7 @@ while True:
     cli = cursor.fetchall()
 
     ##tratamento de erro##
-    while esc in '13' and len(cli) == 0:
+    while esc in ('1','3') and len(cli) == 0:
         print('Erro! Ainda nao há conta cadastrada')
         menu()
         esc = str(input('>>>>>>>>>>>>>>'))
@@ -85,7 +85,7 @@ while True:
         usuario['Sexo'] = str(input('Sexo[m/f]:')).lower()
 
         ##Tratamento de erro##
-        while usuario['Sexo'] not in 'mf':
+        while usuario['Sexo'] not in ('m','f'):
             print('Erro!')
             usuario['Sexo'] = str(input('Sexo[m/f]:')).lower()
         usuario['Login'] = str(input('Login:'))
@@ -168,7 +168,7 @@ while True:
                     break
 
                 ##Tratamento de erro##
-                while esc2 not in '12':
+                while esc2 not in ('1','2'):
                     print("opção inválida!")
 
                 ##Apagar conta##
@@ -232,7 +232,7 @@ while True:
                     print('Sistema de Administração')
                     adm()
                     esc_adm = str(input('>>>>>>>>>>>>>'))
-                    while esc_adm not in '1234':
+                    while esc_adm not in ('1','2','3','4'):
                         print('Opção inválida!')
                         esc_adm = str(input('>>>>>>>>>>>>>'))
                     ##Banir conta##
