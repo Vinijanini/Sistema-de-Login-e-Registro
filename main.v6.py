@@ -137,9 +137,11 @@ while True:
                 print(f'Bem-Vindo(a) - {c[0]}')
                 nome_logado = c[0]
                 lin2()
-                print(f'Sua idade - {c[1]}')
+                print(f'Email: - {c[1]}')
                 lin2()
-                if c[2] == 'm':
+                print(f'Idade: - {c[2]}')
+                lin2()
+                if c[3] == 'm':
                     print(f'Seu sexo é Masculino')
                 else:
                     print(f'Seu sexo é Feminino')
